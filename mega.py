@@ -71,7 +71,7 @@ async def about_callback(client, callback_query):
         "🔹 **About**\n\n"
         "I am a bot that helps you download files from Mega.nz and send them to you on Telegram.\n"
         "I can handle files up to 2 GB and will split larger files for uploading.\n\n"
-        "Created with ❤️ by @NT_BOT_CHANNEL"
+        "Created  by @TEV1L"
     )
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("🔙 Back", callback_data="back")]
@@ -199,7 +199,7 @@ async def download_file(client, message):
                 await client.send_document(
                     chat_id=message.chat.id,
                     document=file_path,
-                    caption="❤️ Created by @NT_BOT_CHANNEL"
+                    caption="Created by @EV1LSecretBot"
                 )
                 os.remove(file_path)
 
